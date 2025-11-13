@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-R" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerador de Senhas</h2>
+        
+        <div class="result-container">
+            <span id="password-output">SuaSenhaAqui</span>
+            <button id="copy-button">Copiar</button>
+        </div>
+
+        <div class="options">
+            <div class="option">
+                <label for="length">Tamanho da Senha</label>
+                <input type="number" id="length" min="4" max="20" value="12" />
+            </div>
+            <div class="option">
+                <input type="checkbox" id="include-uppercase" checked />
+                <label for="include-uppercase">Incluir Maiúsculas (A-Z)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="include-lowercase" checked />
+                <label for="include-lowercase">Incluir Minúsculas (a-z)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="include-numbers" checked />
+                <label for="include-numbers">Incluir Números (0-9)</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="include-symbols" checked />
+                <label for="include-symbols">Incluir Símbolos (!@#)</label>
+            </div>
+        </div>
+
+        <button class="btn-large" id="generate-button">Gerar Senha</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
